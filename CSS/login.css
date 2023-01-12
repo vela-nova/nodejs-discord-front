@@ -1,0 +1,22 @@
+body {
+    background-image: url("../Resources/imagee.png");
+    height: 100vh;
+}
+
+.container{
+    height: 100%;
+}
+
+.login {
+    background-color: rgb(54, 57, 63);
+    width: 50%;
+    height: 40%;
+}
+
+.white{
+    color: white;
+}
+
+.lightgray{
+    color: rgb(146, 149, 153)
+}
