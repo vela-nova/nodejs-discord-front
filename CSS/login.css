@@ -1,5 +1,6 @@
 body {
     background-image: url("../Resources/imagee.png");
+    background-size: 100%;
     height: 100vh;
 }
 
@@ -9,7 +10,7 @@ body {
 
 .login {
     background-color: rgb(54, 57, 63);
-    width: 60%;
+    width: 50%;
     height: 55%;
 }
 
@@ -33,15 +34,29 @@ body {
 .tertiarytext{
     font-family: 'Courier New', Courier, monospace; /* Police à choisir */
     font-size: 0.8rem;
-    padding-top: 1rem;
-    padding-left: 2rem;
+    padding-top: 2rem;
     color: rgb(185, 187, 190)
 }
 
 .inputtext{
-    padding-left: 2rem;
-    margin-left: 2rem;
-    width: 30rem;
+    margin-top: 0.4rem;
+    width: 80%;
     background-color: rgb(32, 34, 37);
     border-color: rgb(32, 34, 37);
+    color: white;
+}
+
+.inputtext:focus{
+    background-color: rgb(32, 34, 37);
+    color: white;
+}
+
+.connectionbutton{
+    margin-top: 2rem;
+    width: 40%;
+}
+
+.graycolor{
+    background-color: rgb(54, 57, 63);
+    border-color: rgb(54, 57, 63);
 }
