@@ -38,6 +38,14 @@ body {
     color: rgb(185, 187, 190)
 }
 
+.fourthtext{
+    font-family: 'Courier New', Courier, monospace; /* Police à choisir */
+    font-size: 0.8rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    color: rgb(185, 187, 190)
+}
+
 .inputtext{
     margin-top: 0.4rem;
     width: 80%;

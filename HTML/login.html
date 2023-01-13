@@ -16,17 +16,43 @@
   <body>  
 
     <div class="container d-flex align-items-center justify-content-center">
-        <div class="row text-center align-items-center justify-content-center login rounded shadow-lg border border-danger">
+
+        <div class="row text-center justify-content-center login rounded shadow-lg">
+
           <label class="primarytext">Ha, te revoilà !</label>
           <label class="secondarytext">Nous sommes si heureux de te revoir</label>
-          <label class="tertiarytext">E-MAIL OU NUMÉRO DE TÉLÉPHONE</label>
-          <input class="inputtext form-control" type="text">
-          <label class="tertiarytext">MOT DE PASSE</label>
-          <input class="inputtext form-control" type="password">
-          <button type="submit" class="connectionbutton btn btn-primary mb-3">Connexion</button>
+
+          <form class="row needs-validation" novalidate>
+
+            <div class="row justify-content-center">
+
+              <label for="validationEmail" class="tertiarytext">E-MAIL</label>
+              <input type="email" class="form-control inputtext" id="validationEmail" required>
+              <div class="invalid-feedback">
+                Veuillez écrire une adresse e-mail valide.
+              </div>
+
+            </div>
+
+            <div class="row justify-content-center">
+              <label for="validationPassword" class="tertiarytext">MOT DE PASSE</label>
+              <input type="password"class="form-control inputtext" id="validationPassword" required>
+              <div class="invalid-feedback">
+                Veuillez écrire un mot de passe valide.
+              </div>
+            </div>
+
+            <div class="row justify-content-center">
+              <button type="submit" class="btn btn-primary connectionbutton  mb-3">Connexion</button>
+            </div>
+            
+          </form>
+          <label class="fourthtext">Besoin d'un compte ?
+            <a href="./signup.html" class="link-primary">S'inscrire</a>
+          </label>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  
+    <script src="../JavaScript/formValidation.js"></script>
   </body>
 </html>
