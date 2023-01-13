@@ -9,14 +9,39 @@ body {
 
 .login {
     background-color: rgb(54, 57, 63);
-    width: 50%;
-    height: 40%;
+    width: 60%;
+    height: 55%;
 }
 
 .white{
     color: white;
 }
 
-.lightgray{
+.primarytext{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    color: white
+}
+
+.secondarytext{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.1rem;
     color: rgb(146, 149, 153)
+}
+
+.tertiarytext{
+    font-family: 'Courier New', Courier, monospace; /* Police à choisir */
+    font-size: 0.8rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    color: rgb(185, 187, 190)
+}
+
+.inputtext{
+    padding-left: 2rem;
+    margin-left: 2rem;
+    width: 30rem;
+    background-color: rgb(32, 34, 37);
+    border-color: rgb(32, 34, 37);
 }
