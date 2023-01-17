@@ -8,8 +8,18 @@
         Array.from(forms).forEach(form => {
           form.addEventListener('submit', event => {
             if (!form.checkValidity()) {
+              const email = document.getElementById('emailLabel')
+              const password = document.getElementById('passwordLabel')
+              const errorCode = '<p class="formError">- Identifiant ou mot de passe invalide.</p>'
+
+              email.style.color = 'rgb(243, 134, 136)'
+              email.innerHTML = 'E-mail ' + errorCode
+              password.style.color = 'rgb(243, 134, 136)'
+              password.innerHTML = 'Mot de passe ' + errorCode
+
               event.preventDefault()
               event.stopPropagation()
+              
             }
       
             form.classList.add('was-validated')

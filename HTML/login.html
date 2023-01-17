@@ -21,27 +21,21 @@
           <h1 id="primaryText">Ha, te revoilà !</h1>
           <h2 id="secondaryText">Nous sommes si heureux de te revoir</h2>
 
-          <form class="row justify-content-center needs-validation">
+          <form class="row justify-content-center needs-validation" novalidate>
 
             <div class="row">
 
               <label id= "emailLabel" for="validationEmail" class="tertiarytext">E-mail
                 <p class="requiredInput">*</p>
               </label>
-              <input id="emailInput "type="email" class="form-control inputtext" id="validationEmail" required>
-              <div id="emailError" class="invalid-feedback">
-                Veuillez écrire une adresse e-mail valide.
-              </div>
+              <input id="emailInput "type="email" class="form-control inputtext" id="validationEmail" pattern=".{1,249}@[a-zA-Z]{1,50}\.[a-z]{2,3}" required>
 
             </div>
 
             <div class="row">
               <label id="passwordLabel" for="validationPassword" class="tertiarytext">Mot de passe
                 <p class="requiredInput">*</p></label>
-              <input id="passwordInput" type="password" class="form-control inputtext" id="validationPassword" required>
-              <div id="passwordError" class="invalid-feedback">
-                Veuillez écrire un mot de passe valide.
-              </div>
+              <input id="passwordInput" type="password" class="form-control inputtext" id="validationPassword" pattern=".{4,255}" required>
             </div>
 
             <div>
