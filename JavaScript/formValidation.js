@@ -21,7 +21,10 @@
               event.stopPropagation()
               
             }
-      
+            
+            console.log("form valid")
+            email.attributeStyleMap.delete('color')
+
             form.classList.add('was-validated')
           }, false)
         })

@@ -36,7 +36,7 @@ body {
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 8px;
-    color: rgb(185, 187, 189)
+    color: rgb(185, 187, 190)
 }
 
 .tertiarytext{
@@ -96,16 +96,31 @@ body {
     border-radius: 4px;
     border-style: solid;
     border-width: 1px;
+    padding-left: 10px;
     min-height: 40px;
     width: 124.8px;
     border: none;
-    padding: 10px;
     height: 40px;
     box-sizing: border-box;
     font-weight: 400;
     font-size: 16px;
     margin-bottom: 20px;
-    color: white;
+    color: rgb(185, 187, 190);
+}
+
+option{
+    background-color: rgb(54, 57, 63);
+    border-color: red;
+}
+
+.checkboxSignup{
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(114, 118, 125);
+    box-sizing: border-box;
 }
 
 .connectionbutton{
