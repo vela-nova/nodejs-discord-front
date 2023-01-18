@@ -123,6 +123,28 @@ option{
     box-sizing: border-box;
 }
 
+#labelSignup{
+    padding-left: 8px;
+    color: rgb(210, 211, 213);
+    text-align: left;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+#labelSignup2{
+    padding-left: 8px;
+    color: rgb(156, 159, 160);
+    text-align: left;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
 .connectionbutton{
     font-size: 16px;
     line-height: 24px;
@@ -135,4 +157,17 @@ option{
     padding: 2px 16px;
     width: 100%;
     margin-bottom: 8px;
+}
+
+#linkLogin{
+    color: rgb(6, 167, 231);
+    text-align: left;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.link{
+    color: rgb(6, 167, 231);
+    text-decoration: none;
 }

@@ -63,18 +63,28 @@
                     </select>
                 </div>
 
-                <div class="row">
+                <div class="d-flex align-items-left">
                     <input class="form-check-input checkboxSignup" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label labelSignup" for="flexCheckDefault">Default checkbox</label>
+                    <label id="labelSignup" class="form-check-label" for="flexCheckDefault">J'ai lu et accepté les 
+                        <a href="//discord.com/terms" class="link">Conditions d'Utilisation</a>
+                        et la 
+                        <a href="//discord.com/privacy" class="link">Politique de Confidentialité</a>
+                        de Discord.
+                    </label>
+                </div>
+
+                <div class="d-flex align-items-left">
+                    <input class="form-check-input checkboxSignup" type="checkbox" value="" id="flexCheckDefault">
+                    <label id="labelSignup2" class="form-check-label" for="flexCheckDefault">(Facultatif) Je veux bien recevoir des e-mails à propos des mises à jour de Discord, des astuces ou des offres spécales. Tu peux te désinscrire à tout moment.
+                    </label>
                 </div>
                   
-
                 <div>
                     <button id="signupButton" type="submit" class="btn btn-primary connectionbutton">Continuer</button>
                 </div>
             
             </form>
-            <a href="./signup.html" class="link-primary">Tu as déjà un compte ?</a>
+            <a id="linkLogin" href="./signup.html">Tu as déjà un compte ?</a>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
@@ -83,3 +93,12 @@
     <script src="../JavaScript/addSelectOption.js"></script>
   </body>
 </html>
+
+<!-- TODO: Focus des select Jour/Mois/Année -->
+<!-- TODO: Largeur du select Mois -->
+<!-- TODO: Changer la petite flèche des select -->
+<!-- TODO: Bouton continuer non cliquable si la checkbox n'est pas coché -->
+<!-- TODO: Rajouter une bulle d'info lorsque le bouton est non cliquable -->
+<!-- TODO: Gérer les erreurs pattern du champ -->
+<!-- TODO: Changer les icones de validation/erreur (form-control, form-select etc) -->
+<!-- TODO: Changer apparence checkbox lors du clic -->
