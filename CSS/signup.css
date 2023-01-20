@@ -159,6 +159,14 @@ option{
     margin-bottom: 8px;
 }
 
+.custom-tooltip {
+    font-size: 13px;
+    font-family: 'Noto Sans', Helvetica, Arial, sans-serif;
+    --bs-tooltip-bg: rgb(24, 25, 28);
+    --bs-tooltip-opacity: 1;
+    text-align: left;
+  }  
+
 #linkLogin{
     color: rgb(6, 167, 231);
     text-align: left;
