@@ -64,8 +64,8 @@
                 </div>
 
                 <div class="d-flex align-items-left">
-                    <input class="form-check-input checkboxSignup" type="checkbox" value="" id="flexCheckDefault">
-                    <label id="labelSignup" class="form-check-label" for="flexCheckDefault">J'ai lu et accepté les 
+                    <input class="form-check-input checkboxSignup" type="checkbox" value="" id="checkbox1">
+                    <label id="labelSignup" class="form-check-label" for="checkbox1">J'ai lu et accepté les 
                         <a href="//discord.com/terms" class="link">Conditions d'Utilisation</a>
                         et la 
                         <a href="//discord.com/privacy" class="link">Politique de Confidentialité</a>
@@ -74,13 +74,13 @@
                 </div>
 
                 <div class="d-flex align-items-left">
-                    <input class="form-check-input checkboxSignup" type="checkbox" value="" id="flexCheckDefault">
-                    <label id="labelSignup2" class="form-check-label" for="flexCheckDefault">(Facultatif) Je veux bien recevoir des e-mails à propos des mises à jour de Discord, des astuces ou des offres spécales. Tu peux te désinscrire à tout moment.
+                    <input class="form-check-input checkboxSignup" type="checkbox" value="" id="checkbox2">
+                    <label id="labelSignup2" class="form-check-label" for="checkbox2">(Facultatif) Je veux bien recevoir des e-mails à propos des mises à jour de Discord, des astuces ou des offres spécales. Tu peux te désinscrire à tout moment.
                     </label>
                 </div>
                   
                 <div>
-                    <button id="signupButton" type="submit" class="btn btn-primary connectionbutton">Continuer</button>
+                    <button id="signupButton" type="submit" class="btn btn-primary connectionbutton" disabled>Continuer</button>
                 </div>
             
             </form>
@@ -91,6 +91,7 @@
     <script src="../JavaScript/formSignupValidation.js"></script>
     <script src="../JavaScript/loginValidation.js"></script>
     <script src="../JavaScript/addSelectOption.js"></script>
+    <script src="../JavaScript/cliquableButton.js"></script>
   </body>
 </html>
 
@@ -102,3 +103,4 @@
 <!-- TODO: Gérer les erreurs pattern du champ -->
 <!-- TODO: Changer les icones de validation/erreur (form-control, form-select etc) -->
 <!-- TODO: Changer apparence checkbox lors du clic -->
+<!-- TODO: Comparer la date saisie à la date d'aujourd'hui pour savoir si l'utilisateur a plus de 13 ans -->

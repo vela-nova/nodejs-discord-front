@@ -1,3 +1,4 @@
+/*
 const button = document.getElementById("connectionButton")
 button.addEventListener("click", getAccountInformation)
 
@@ -28,3 +29,4 @@ function getAccountInformation(){
 
 
 }
+*/
