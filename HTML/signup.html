@@ -34,7 +34,7 @@
 
                 <div class="row">
                     <label id="passwordLabel" for="validationPassword" class="tertiarytext">Mot de passe</label>
-                    <input id="passwordInput" type="password" class="form-control inputtext" id="validationPassword" pattern=".{4,255}" required>
+                    <input id="passwordInput" type="password" class="form-control inputtext" id="validationPassword" pattern="(?=.*[a-z^\s])(?=.*[A-Z^\s])(?=.*[\d^\s])^[a-zA-Z\d]{8,32}" required>
                 </div>
 
                 <div class="row d-flex justify-content-between">
@@ -45,18 +45,18 @@
                     </select>
                     <select id="selectMonth" class="selectBirthdate" aria-label="Default select example" required>
                         <option selected>Mois</option>
-                        <option value="1">janvier</option>
-                        <option value="2">février</option>
-                        <option value="3">mars</option>
-                        <option value="4">avril</option>
-                        <option value="5">mai</option>
-                        <option value="6">juin</option>
-                        <option value="7">juillet</option>
-                        <option value="8">aout</option>
-                        <option value="9">septembre</option>
-                        <option value="10">octobre</option>
-                        <option value="11">novembre</option>
-                        <option value="12">décembre</option>
+                        <option value="0">janvier</option>
+                        <option value="1">février</option>
+                        <option value="2">mars</option>
+                        <option value="3">avril</option>
+                        <option value="4">mai</option>
+                        <option value="5">juin</option>
+                        <option value="6">juillet</option>
+                        <option value="7">aout</option>
+                        <option value="8">septembre</option>
+                        <option value="9">octobre</option>
+                        <option value="10">novembre</option>
+                        <option value="11">décembre</option>
                     </select>
                     <select id="selectYear" class="selectBirthdate" aria-label="Default select example" required>
                         <option selected>Année</option>
@@ -64,7 +64,7 @@
                 </div>
 
                 <div class="d-flex align-items-left">
-                    <input class="form-check-input checkboxSignup" type="checkbox" value="" id="checkbox1">
+                    <input class="form-check-input checkboxSignup" type="checkbox" id="checkbox1" >
                     <label id="labelSignup" for="checkbox1">J'ai lu et accepté les 
                         <a href="//discord.com/terms" class="link">Conditions d'Utilisation</a>
                         et la 
@@ -74,11 +74,10 @@
                 </div>
 
                 <div class="d-flex align-items-left">
-                    <input class="form-check-input checkboxSignup" type="checkbox" value="" id="checkbox2">
-                    <label id="labelSignup2" for="checkbox2">(Facultatif) Je veux bien recevoir des e-mails à propos des mises à jour de Discord, des astuces ou des offres spécales. Tu peux te désinscrire à tout moment.
-                    </label>
+                    <input class="form-check-input checkboxSignup" type="checkbox" id="checkbox2">
+                    <label id="labelSignup2" for="checkbox2">(Facultatif) Je veux bien recevoir des e-mails à propos des mises à jour de Discord, des astuces ou des offres spécales. Tu peux te désinscrire à tout moment.</label>
                 </div>
-                  
+
                 <div id="infobulle" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="custom-tooltip" data-bs-title="Tu dois accepter nos conditions d'utilisation pour continuer.">
                     <button id="signupButton" type="submit" class="btn btn-primary connectionbutton" disabled>Continuer</button>
                 </div>
@@ -97,12 +96,6 @@
   </body>
 </html>
 
-<!-- TODO: Focus des select Jour/Mois/Année -->
-<!-- TODO: Largeur du select Mois -->
-<!-- TODO: Changer la petite flèche des select -->
-<!-- TODO: Rajouter une bulle d'info lorsque le bouton est non cliquable -->
-<!-- TODO: Gérer les erreurs pattern des champ -->
-<!-- TODO: Changer les icones de validation/erreur (form-control, form-select etc) -->
-<!-- TODO: Changer apparence checkbox lors du clic -->
-<!-- TODO: Comparer la date saisie à la date d'aujourd'hui pour savoir si l'utilisateur a plus de 13 ans -->
-<!-- TODO: Checkbox devient verte après avoir cliqué sur continuer, il faut qu'elles restent bleu -->
+<!-- TODO(Facultatif): Changer l'emplacement de la flêche des select -->
+<!-- TODO(Facultatif): Faire en sorte qu'après actualisation, la checkbox ne soit pas cochée -->
+<!-- TODO(Facultatif): Changer l'intérieur des select -->
