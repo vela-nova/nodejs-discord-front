@@ -16,14 +16,10 @@
               email.innerHTML = 'E-mail ' + errorCode
               password.style.color = 'rgb(243, 134, 136)'
               password.innerHTML = 'Mot de passe ' + errorCode
-
-              event.preventDefault()
-              event.stopPropagation()
               
             }
             
-            console.log("form valid")
-            email.attributeStyleMap.delete('color')
+            console.log("format login valid")
 
             form.classList.add('was-validated')
           }, false)
