@@ -24,12 +24,29 @@
     left: 0;
 }
 
-.channel_content>p{
-    font-size: large;
-    padding: 20px;
-    color: white;
+.channel_content>button{
+    font-size:medium;
+    padding: 10px;
+    background-color: rgb(47,49,54);
     font-weight: 700;
-    margin-left: 10px;
+    border: none;
+    color: white;
+    margin: 20px 0 20px 10px;
+    height: 40px;
+    width:270px;
+    
+}
+
+.channel_content>button:hover{
+        background-color: rgb(66,70,77);
+        color: white;
+      }
+
+
+
+.channel_content{
+    overflow-y: scroll;
+    height: 77vh;
 }
 
 .header_channel>h1{
@@ -44,13 +61,11 @@
     width:100%;
     background-color:rgb(47,49,54);
     box-shadow: 0 2px 10px 0;
-    position: absolute;
-    bottom: 0;
+    position: relative;
+
 }
 
 .footer_channel>h1{
-    font-family: 'Nunito Sans', sans-serif;
-    color:white;
     font-size: 20px;
     padding:1rem;
 }
@@ -97,6 +112,7 @@
     margin-top: 50px;
 }
 
+
 .msg>h2{
     margin-left: 10px;
     color: rgb(198,164,26);
@@ -124,6 +140,10 @@
     color: rgb(103,118,124);
 }
 
+.chat_input:focus{
+    color:white
+}
+
 .header_user{
     height:8vh;
     width:100%;
@@ -146,14 +166,25 @@
     left: 85%;
 }
 
+.scroll_user{
+    overflow-y: scroll;
+    height:92vh;
+}
+
 .msg_content{
     display: flex;
     margin-top: 50px;
 }
 
-.msg>h2{
+.msg_footer>h2{
     margin-left: 10px;
     color: rgb(198,164,26);
     font-weight: 600;
     font-size: 17px;
+    margin-top: 15px;
 }
+
+#img{
+    margin-top:5px;
+}
+
