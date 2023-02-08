@@ -1,9 +1,8 @@
 (() => {
         'use strict'
 
-        const button = document.getElementById("connectionButton")
-        const email = document.getElementById("emailInput")
-        const password = document.getElementById("passwordInput")
+        const emailInput = document.getElementById("emailInput")
+        const passwordInput = document.getElementById("passwordInput")
         
         const url = 'http://localhost:8080/api/auth/login';
         let headers = new Headers();
@@ -24,36 +23,36 @@
         Array.from(forms).forEach(form => {
             form.addEventListener('submit', event => {
                 
-                
+                const email = document.getElementById('emailLabel')
+                const password = document.getElementById('passwordLabel')
 
                 if (!form.checkValidity()) {
-                    const email = document.getElementById('emailLabel')
-                    const password = document.getElementById('passwordLabel')
+                    
                     console.log("bonjouur")
                     
                     const errorCode = '<p class="formError2">- Identifiant ou mot de passe invalide.</p>'
 
-                    // email.classList.add("formError1")
-                    // email.innerHTML = 'E-mail ' + errorCode
-                    // password.classList.add("formError1")
-                    // password.innerHTML = 'Mot de passe ' + errorCode
+                    email.classList.add("formError1")
+                    email.innerHTML = 'E-mail ' + errorCode
+                    password.classList.add("formError1")
+                    password.innerHTML = 'Mot de passe ' + errorCode
               
                     event.preventDefault()
                 }
 
                 if (form.checkValidity()) {
                     
-                    // email.classList.remove("formError1", "formError2")
-                    // email.innerHTML = 'E-mail'
-                    // password.classList.remove("formError1", "formError2")
-                    // password.innerHTML = 'Mot de passe'
+                    email.classList.remove("formError1", "formError2")
+                    email.innerHTML = 'E-mail'
+                    password.classList.remove("formError1", "formError2")
+                    password.innerHTML = 'Mot de passe'
 
                     console.log("format login valid")
                     form.classList.add('was-validated')
 
                     const body = {
-                        "username": email.value,
-                        "password": password.value
+                        "username": emailInput.value,
+                        "password": passwordInput.value
                     }
                     event.preventDefault();
                     var xhttp = new XMLHttpRequest();
@@ -63,7 +62,8 @@
                             console.log(this.responseText)
                             if (isJsonString(this.responseText) && JSON.parse(this.responseText).hasOwnProperty('accessToken')){
                                 const accessToken = JSON.parse(this.responseText).accessToken;
-                                console.log(accessToken)
+                                document.cookie = "token=" + accessToken;
+                                document.location.href="../HTML/index.html"; 
                             }
                         }
                     };
