@@ -20,14 +20,12 @@
         const userDate = new Date(userYear, userMonth, userDay)
         
         if (!form.checkValidity()) {
-          
-          console.log(userDate);
 
           if ((dateToday.getFullYear() - userDate.getFullYear()) <= 13) {
             if (dateToday.getMonth() < userDate.getMonth()) {
               if (dateToday.getDate() < userDate.getDate()) {
-                date.style.color = 'rgb(243, 134, 136)'
-                // date.classlist.add("formError1")
+                // date.style.color = 'rgb(243, 134, 136)'
+                date.classlist.add("formError1")
                 date.innerHTML = 'Date de naissance <p class="formError2">- Butcord est interdit aux moins de 13 ans.</p>'
               }
             }
