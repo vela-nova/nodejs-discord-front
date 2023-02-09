@@ -51,7 +51,11 @@ body {
     color: rgb(185, 187, 190)
 }
 
-.formError{
+.formError1{
+    color: rgb(243, 134, 136);
+}
+
+.formError2{
     text-transform: none;
     font-style: italic;
     font-weight: 300;
