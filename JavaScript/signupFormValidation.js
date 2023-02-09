@@ -77,6 +77,7 @@
           xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
               console.log(this.responseText)
+              document.location.href="../HTML/login.html";
               // if (isJsonString(this.responseText) && JSON.parse(this.responseText).hasOwnProperty('accessToken')){
               //   const accessToken = JSON.parse(this.responseText).accessToken;
               //     document.cookie = "token=" + accessToken;
