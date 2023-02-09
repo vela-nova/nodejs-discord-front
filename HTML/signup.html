@@ -24,18 +24,18 @@
             <form class="row justify-content-center needs-validation" novalidate>
 
                 <div class="row">
-                    <label id= "emailLabel" for="validationEmail" class="tertiarytext">E-mail</label>
-                    <input id="emailInput "type="email" class="form-control inputtext" id="validationEmail" pattern=".{1,249}@[a-zA-Z]{1,50}\.[a-z]{2,3}" required>
+                    <label id="emailLabel" for="validationEmail" class="tertiarytext">E-mail</label>
+                    <input id="emailInputSignup" type="email" class="form-control inputtext" name="validationEmail" pattern=".{1,249}@[a-zA-Z]{1,50}\.[a-z]{2,3}" required>
                 </div>
 
                 <div class="row">
                     <label id="usernameLabel" for="validationUsername" class="tertiarytext">Nom d'utilisateur</label>
-                    <input id="usernameInput "type="text" class="form-control inputtext" id="validationUsername" pattern=".{2,32}" required>
+                    <input id="usernameInputSignup "type="text" class="form-control inputtext" name="validationUsername" pattern=".{2,32}" required>
                 </div>
 
                 <div class="row">
                     <label id="passwordLabel" for="validationPassword" class="tertiarytext">Mot de passe</label>
-                    <input id="passwordInput" type="password" class="form-control inputtext" id="validationPassword" pattern="(?=.*[a-z^\s])(?=.*[A-Z^\s])(?=.*[\d^\s])^[a-zA-Z\d]{8,32}" required>
+                    <input id="passwordInput" type="password" class="form-control inputtext" name="validationPassword" pattern="(?=.*[a-z^\s])(?=.*[A-Z^\s])(?=.*[\d^\s])^[a-zA-Z\d]{8,32}" required>
                 </div>
 
                 <div class="row d-flex justify-content-between">
