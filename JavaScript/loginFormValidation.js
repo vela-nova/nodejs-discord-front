@@ -28,8 +28,6 @@
 
                 if (!form.checkValidity()) {
                     
-                    console.log("bonjouur")
-                    
                     const errorCode = '<p class="formError2">- Identifiant ou mot de passe invalide.</p>'
 
                     email.classList.add("formError1")
@@ -62,7 +60,7 @@
                             console.log(this.responseText)
                             if (isJsonString(this.responseText) && JSON.parse(this.responseText).hasOwnProperty('accessToken')){
                                 const accessToken = JSON.parse(this.responseText).accessToken;
-                                document.cookie = "token=" + accessToken;
+                                document.cookie = accessToken;
                                 document.location.href="../HTML/index.html"; 
                             }
                         }
