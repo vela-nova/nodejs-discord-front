@@ -2,6 +2,7 @@
     'use strict'
   
     const emailInputSignup = document.getElementById("emailInputSignup")
+    const usernameInput = document.getElementById("usernameInput")
     const passwordInput = document.getElementById("passwordInput")
 
     const url = 'http://localhost:8080/api/auth/signup';
@@ -66,6 +67,7 @@
           form.classList.add('was-validated')
 
           const body = {
+            "username": usernameInput.value,
             "email": emailInputSignup.value,
             "password": passwordInput.value
           }
